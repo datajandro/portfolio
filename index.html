@@ -9,16 +9,22 @@
         <link 
             rel="stylesheet" 
             href="./style.css" />
-        <script src="https://kit.fontawesome.com/ec83f97c23.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <script 
+            src="https://kit.fontawesome.com/ec83f97c23.js" 
+            crossorigin="anonymous"></script>
+        <script src="index.js"></script>
     </head>
     <main>
         <body>
             <div class="portadaContainer">
                 <div class="portadaA">
                     <img 
-                        src="./imagenes/perfil.png" 
+                        src="./imagenes/foto-daniel.png" 
                         alt="imagen de perfil"
-                        class="imagenPortada"
+                        class="imagenPortada border-radius1"
                     />
                     <div class="tituloPortada">
                         <h1>Daniel Torrealba</h1>
@@ -31,57 +37,73 @@
                     <img src="./imagenes/react.png" alt="React">
                 </div>
             </div>
-            <div class="datos1 border-bottom-right grid-2columnas">
-                <img 
-                    class="img1 border-radius1"
-                    src="./imagenes/foto-daniel.png" 
-                    alt="Foto del desarrollador, Daniel Torrealba" />
-                <p>
-                    <span class="mayuscula">M</span>i nombre es Daniel 
-                    Torrealba y desarrollo paginas Web 
-                    usando HTML, CSS y React.
-                </p>
+            <div id="menu" class="datos1 border-bottom-right">
+                <button 
+                    id="aboutButton"
+                    onclick="mostrarAbout()">
+                    Acerca de mi
+                </button>
+                <button 
+                    id="projectsButton"
+                    onclick="mostrarProjects()">
+                    Proyectos
+                </button>
             </div>
-            <div class="datos1 border-bottom-right">
-                <p>
-                    <span class="mayuscula">T</span>ambién soy Trombonista,
-                    Ingeniero de Sonido y Productor Musical. Me gusta
-                    escuchar Podcasts, las series de comedia, y ultimamente
-                    veo muchas peliculas viejas. 
-                </p>
+            <div id="about">
+                <div class="datos1 border-bottom-right">
+                    <p>
+                        <span class="mayuscula">M</span>i nombre es Daniel 
+                        Torrealba y desarrollo paginas Web 
+                        usando HTML, CSS y React.
+                    </p>
+                </div>
+                <div class="datos1 border-bottom-right">
+                    <p>
+                        <span class="mayuscula">T</span>ambién soy Trombonista,
+                        Ingeniero de Sonido y Productor Musical. Me gusta
+                        escuchar Podcasts, las series de comedia, y ultimamente
+                        veo muchas peliculas viejas. 
+                    </p>
+                </div>                
             </div>
-            <div class="datos1 border-bottom-right">
-                    <h1>FotoApp</h1>
-                    <div class="grid-2columnas">
-                        <p>
-                            FotoApp es una aplicación desarrollada en React 
-                            extremadamente basada en la versión web de Instagram 
-                            <i class="fa-brands fa-instagram"></i><br/>
-                            Si haces clic en la imagen
-                            <i class="fa-solid fa-arrow-right"></i><br/>
-                            podras ver la pagina en vivo.<br/>
-                            Actualmente es posible hacer publicaciones nuevas
-                            <i class="fa-regular fa-square-plus"></i>,                        
-                            usar la función de "Me Gusta"
-                            <i class="fa-solid fa-heart"></i>
-                            , escribir comentarios
-                            <i class="fa-solid fa-comments"></i>,                        
-                            y ver la versión en desarrollo de los "Estados" 
-                            <i class="fa-solid fa-camera-retro"></i>
-                            en la
-                            barra superior de la página. También puedes "seguir"
-                            <i class="fa-solid fa-user-plus"></i>
-                            a nuevos usuarios, y se actualizaran en la lista de
-                            estados.
-                        </p>
-                        <a href="https://datajandro.github.io/fotoapp-react/" target="_blank" rel="noopener noreferrer">
-                            <img 
-                                id="imgFotoApp" 
-                                src="./imagenes/fotoapp.jpg" 
-                                alt="Imagen de la App FotoApp" />
-                        </a>                        
-                    </div>
-                    
+            <div id="projects">
+                <div class="datos1 border-bottom-right">
+                        <h1>FotoApp</h1>
+                        <div class="grid-2columnas">
+                            <p>
+                                FotoApp es una aplicación desarrollada en React 
+                                extremadamente basada en la versión web de Instagram 
+                                <i class="fa-brands fa-instagram"></i><br/>
+                                Si haces clic en la imagen
+                                <i class="fa-solid fa-arrow-right"></i><br/>
+                                podras ver la pagina en vivo.<br/>
+                                Actualmente es posible hacer publicaciones nuevas
+                                <i class="fa-regular fa-square-plus"></i>,                        
+                                usar la función de "Me Gusta"
+                                <i class="fa-solid fa-heart"></i>
+                                , escribir comentarios
+                                <i class="fa-solid fa-comments"></i>,                        
+                                y ver la versión en desarrollo de los "Estados" 
+                                <i class="fa-solid fa-camera-retro"></i>
+                                en la
+                                barra superior de la página. También puedes "seguir"
+                                <i class="fa-solid fa-user-plus"></i>
+                                a nuevos usuarios, y se actualizaran en la lista de
+                                estados.
+                            </p>
+                            <a 
+                                class="linkFotoApp"
+                                href="https://datajandro.github.io/fotoapp-react/" 
+                                target="_blank" 
+                                rel="noopener noreferrer">
+                                <img 
+                                    id="imgFotoApp" 
+                                    src="./imagenes/fotoapp.jpg" 
+                                    alt="Imagen de la App FotoApp" />
+                            </a>                        
+                        </div>
+                        
+                </div>                
             </div>
         </body>
         <footer>

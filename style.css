@@ -11,14 +11,18 @@
     display: flex;
 }
 
-.portadaA img {
-    width: 18vw;
-    height: 18vw;
+.imagenPortada {
+    width: 231px;
+    height: 231px;
+    object-fit: cover;
+    object-position: 0 20%;
+    margin: auto;
 }
 
 .tituloPortada {
     margin: auto;
     font-size: 1.2rem;
+    font-family: 'Dancing Script', cursive;
 }
 
 .portadaB {
@@ -29,9 +33,17 @@
     height: 7.14vw;
 }
 
+#about {
+    display: none;
+}
+
+#projects {
+    display: none;
+}
+
 .border-bottom-right {
-    border-bottom: 5px solid black;
-    border-right: 5px solid blue;
+    border-bottom: 7px solid black;
+    border-right: 7px solid blue;
 }
 
 .datos1 {
@@ -39,6 +51,8 @@
     width: 75vw;
     text-align: center;
     font-size: 1.7rem;
+    font-family: 'Quicksand', sans-serif;
+
 }
 
 .datos1 p {
@@ -48,10 +62,6 @@
 .mayuscula {
     font-size: 2.7rem;
     font-weight: bold;
-}
-
-.img1 {
-    width: 25%;
 }
 
 .border-radius1 {
@@ -64,17 +74,40 @@
 
 .grid-2columnas {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
+}
+
+.linkFotoApp {
+    margin: auto;
+    transition: 0.1s;
+}
+
+.linkFotoApp:hover {
+    border: 3.5px solid rgb(128, 1, 1);
+    border-radius: 14px;
+    background-color: rgba(128, 1, 1, 0.5);
 }
 
 #imgFotoApp {
-    width: 100%;
+    width: 90%;
+    border: 3.5px solid red;
+    border-radius: 14px;
+    margin: 5% auto;
 }
 
 footer {
     max-width: max-content;
     margin: auto;
     margin-top: 20px;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+@media screen and (max-width: 1211px) {
+    .imagenPortada {
+        width: 18vw;
+        height: 18vw;
+    }
 }
 
 @media screen and (max-width: 879px) {
